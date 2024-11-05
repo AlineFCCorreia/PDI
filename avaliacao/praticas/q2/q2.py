@@ -52,4 +52,4 @@ plt.show()
 #utlizando componentes conectados para contar quantas áreas de textura temos
 num_labels, img = cv2.connectedComponents(erode)
 num_areas = num_labels - 1
-print(num_areas)
+print(f'O número de texturas encontradas é {num_areas}.')

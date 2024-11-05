@@ -12,7 +12,7 @@ def verificar_borrado(imagem):
     # Aplicar o filtro laplaciano, para detectar as bordas
     laplaciano = cv2.Laplacian(img, cv2.CV_64F)
   
-    # binarizar a imagem para a posterior con
+    # binarizar a imagem
     _, imagem_bin = cv2.threshold(laplaciano, 50, 255, cv2.THRESH_BINARY)
 
     # Calcular a soma dos pixels brancos que seriam as bordas
